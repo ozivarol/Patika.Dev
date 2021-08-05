@@ -10,7 +10,7 @@ SELECT country_id, COUNT(*) FROM city
 GROUP BY country_id
 ORDER BY COUNT(*) DESC
 LIMIT 1;
-
+SELECT customer_id,CONCAT(first_name,' ',last_name) as sanat from customer;
 
 
 
