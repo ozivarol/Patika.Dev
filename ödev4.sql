@@ -9,7 +9,7 @@ SELECT COUNT(city) FROM city
 WHERE city LIKE 'R%r';
 
 
-
+SELECT DISTINCT(CITY) FROM STATION WHERE CITY RLIKE '^[aeiou]';
 
 
 
