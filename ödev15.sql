@@ -8,3 +8,8 @@ WHERE film.length >=(
 
 
 )
+
+SELECT SUM(payment.amount),customer.first_name,customer.last_name from customer
+INNER JOIN payment ON payment.customer_id = customer.customer_id
+Group by customer.first_name,customer.last_name
+order by sum(payment.amount) desc
