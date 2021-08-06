@@ -10,7 +10,9 @@ WHERE city LIKE 'R%r';
 
 
 SELECT DISTINCT(CITY) FROM STATION WHERE CITY RLIKE '^[aeiou]';
-
+select distinct city from station 
+where left(city,1) in ('a','e','i','o','u') 
+and right(city, 1) in ('a','e','i','o','u')
 
 
 
